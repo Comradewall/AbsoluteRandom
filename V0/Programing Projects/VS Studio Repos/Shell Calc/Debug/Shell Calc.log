@@ -1,0 +1,4 @@
+﻿  Shell Calc.cpp
+C:\Users\mihai\source\repos\Shell Calc\Shell Calc.cpp(40,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mihai\source\repos\Shell Calc\Shell Calc.cpp(44,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Shell Calc.vcxproj -> C:\Users\mihai\source\repos\Shell Calc\Debug\Shell Calc.exe

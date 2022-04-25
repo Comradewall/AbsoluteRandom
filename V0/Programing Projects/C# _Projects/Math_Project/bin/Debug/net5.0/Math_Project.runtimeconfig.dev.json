@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/nepu-nep/.dotnet/store/|arch|/|tfm|",
+      "/home/nepu-nep/.nuget/packages"
+    ]
+  }
+}

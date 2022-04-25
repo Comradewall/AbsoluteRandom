@@ -1,0 +1,125 @@
+/*
+ * Arduino Geiger Counter with LCD
+ * The project consisted of a GM Tube, 
+ * a high voltage Power supply and a detector circuit. 
+ * At the end the counts will be shown on a LCD display. 
+ * The device will be powered by a 5v battery.
+ * http://www.forgani.com/electronics-projects/
+*/
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(12,11,10,9,7,3); 
+const int geigerPin=2;
+const int buzzerPin=5;   // speaker output
+const int ledPin=9;
+const int modePin=8;     // push button, with a pullup resistor 4.7k is connected to Vcc
+const int pwmPin=13;
+long counts=0;
+
+int lastDebouncetime=0;
+int debounceDelay=1000;
+long previousUpdate=0;
+long updateInterval=2000;
+
+
+void setup() {
+  // initialize digital pin 13 as an output.
+  Serial.begin(9600);
+  pinMode(pwmPin, OUTPUT);
+  lcd.begin(16, 2);
+  lcd.clear();
+  lcd.print("Testing: uSv/h, CPM");
+  pinMode(geigerPin, INPUT);
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
+  pinMode(modePin, INPUT);
+  digitalWrite(ledPin, HIGH);
+  delay(1000);
+  digitalWrite(ledPin, LOW);
+  digitalWrite(geigerPin, HIGH);
+  attachInterrupt(0, event, CHANGE);
+}
+
+
+void loop() {
+  digitalWrite(pwmPin, HIGH);
+  delayMicroseconds(5);
+  digitalWrite(pwmPin, LOW);
+  delayMicroseconds(5);
+  int reading = digitalRead(modePin);
+  if ((millis()-lastDebouncetime) > debounceDelay)
+    lastDebouncetime = millis();
+  if (reading == LOW)
+    counterMode();
+  else 
+    mainMode();
+}
+
+#define CONV_FACTOR 0.00812
+
+void mainMode() {
+  unsigned long currentMilis = millis();
+  if (currentMilis - previousUpdate >= updateInterval) {
+	  previousUpdate = currentMilis;
+    float elapsedMillis = millis();
+    float convertCPM = 6000/elapsedMillis;
+    long countPerMinute = round(((counts-1)/2)*convertCPM);
+    float radiationValue = countPerMinute * CONV_FACTOR;	
+	  lcd.clear();
+    lcd.print(" uSv/h");
+    lcd.setCursor(8,0);
+    lcd.print(radiationValue, 3);
+    lcd.setCursor(0,1);
+    lcd.print(" CPM ");
+    lcd.setCursor(8,1);
+    lcd.print(countPerMinute);
+    lcd.setCursor(0,0);
+  }
+}
+
+void counterMode() {
+  unsigned long currentMilis = millis();
+  if (currentMilis - previousUpdate >= updateInterval) {
+	  previousUpdate = currentMilis;
+    float elapsedMillis = millis();
+	  int elapsedsec = round(elapsedMillis/1000);
+    float floatcounts = round(counts-1)/2;
+	  lcd.clear();    
+    lcd.print(" Counts:");
+	  lcd.setCursor(9,0);
+    if (floatcounts > 1000) {
+      lcd.print(floatcounts/1000);
+      lcd.print("k");
+    } else {
+      lcd.print(round(floatcounts));
+    }
+    lcd.setCursor(0,1);
+    lcd.print(" Time:");
+    lcd.setCursor(9,1);
+    writeTime(elapsedsec);
+	  lcd.setCursor(0,0);
+  }
+}
+
+
+void event() {
+  counts++;
+  tone(buzzerPin, 2488, 1);
+  digitalWrite(ledPin, HIGH);
+  delay(1);
+  digitalWrite(ledPin, LOW);  
+}
+
+
+void writeTime(int secs) {
+  String secs_o = ":";
+  String mins_o = ":";
+  int mins = secs/60; 
+  int hours = mins/60; 
+  secs = secs-(mins * 60);  // display 59 secs max
+  mins = mins-(hours * 60); // display 59 minutes 
+  if (secs < 10) 
+    secs_o = ":0";
+  if (mins < 10) 
+    mins_o = "0";
+  lcd.print(mins_o + mins + secs_o + secs);
+}

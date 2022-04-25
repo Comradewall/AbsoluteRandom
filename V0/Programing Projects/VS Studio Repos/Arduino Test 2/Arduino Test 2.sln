@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Arduino Test 2", "Arduino Test 2.pyproj", "{816793EA-D6D7-4E71-9D40-3FEB8EC6BE27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{816793EA-D6D7-4E71-9D40-3FEB8EC6BE27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816793EA-D6D7-4E71-9D40-3FEB8EC6BE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33E03B00-E8EB-4303-BDFB-8461A095A26D}
+	EndGlobalSection
+EndGlobal

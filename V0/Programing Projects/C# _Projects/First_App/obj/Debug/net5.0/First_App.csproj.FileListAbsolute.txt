@@ -1,0 +1,16 @@
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/bin/Debug/net5.0/First_App
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/bin/Debug/net5.0/First_App.deps.json
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/bin/Debug/net5.0/First_App.runtimeconfig.json
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/bin/Debug/net5.0/First_App.runtimeconfig.dev.json
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/bin/Debug/net5.0/First_App.dll
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/bin/Debug/net5.0/ref/First_App.dll
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/bin/Debug/net5.0/First_App.pdb
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/obj/Debug/net5.0/First_App.csprojAssemblyReference.cache
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/obj/Debug/net5.0/First_App.GeneratedMSBuildEditorConfig.editorconfig
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/obj/Debug/net5.0/First_App.AssemblyInfoInputs.cache
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/obj/Debug/net5.0/First_App.AssemblyInfo.cs
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/obj/Debug/net5.0/First_App.csproj.CoreCompileInputs.cache
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/obj/Debug/net5.0/First_App.dll
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/obj/Debug/net5.0/ref/First_App.dll
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/obj/Debug/net5.0/First_App.pdb
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/First_App/obj/Debug/net5.0/First_App.genruntimeconfig.cache

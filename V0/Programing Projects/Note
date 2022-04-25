@@ -1,0 +1,4 @@
+Note bout C#
+Sooo to create a new project use console command : "dotnet new console -o myApp"
+And to run a aplication use : "dotnet run"
+

@@ -1,0 +1,16 @@
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/obj/Debug/net5.0/Math_Project.csprojAssemblyReference.cache
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/obj/Debug/net5.0/Math_Project.GeneratedMSBuildEditorConfig.editorconfig
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/obj/Debug/net5.0/Math_Project.AssemblyInfoInputs.cache
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/obj/Debug/net5.0/Math_Project.AssemblyInfo.cs
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/obj/Debug/net5.0/Math_Project.csproj.CoreCompileInputs.cache
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/bin/Debug/net5.0/Math_Project
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/bin/Debug/net5.0/Math_Project.deps.json
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/bin/Debug/net5.0/Math_Project.runtimeconfig.json
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/bin/Debug/net5.0/Math_Project.runtimeconfig.dev.json
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/bin/Debug/net5.0/Math_Project.dll
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/bin/Debug/net5.0/ref/Math_Project.dll
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/bin/Debug/net5.0/Math_Project.pdb
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/obj/Debug/net5.0/Math_Project.dll
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/obj/Debug/net5.0/ref/Math_Project.dll
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/obj/Debug/net5.0/Math_Project.pdb
+/home/nepu-nep/Documents/Projects/Projects_Local/C# _Projects/Math_Project/obj/Debug/net5.0/Math_Project.genruntimeconfig.cache
